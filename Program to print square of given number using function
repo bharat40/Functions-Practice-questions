@@ -1,0 +1,18 @@
+#include <stdio.h> // function to print the square of a given number
+int square(int); // function declare
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    float sq = square(num); // function call 
+    printf("Square of %d is %.2f", num, sq); 
+    return 0;
+}
+
+int square(int n) // function definetion
+{
+    float s;
+    s = n * n;
+    return s; // function returning value of s means square of given no.
+}
